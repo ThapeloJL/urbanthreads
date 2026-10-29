@@ -1,11 +1,1 @@
-import React from 'react'
-
-const auth = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default auth
+export { app, auth, db } from "./firebaseConfig.js";
