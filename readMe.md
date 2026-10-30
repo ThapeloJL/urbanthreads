@@ -2,7 +2,7 @@
 
 A responsive online clothing store for causal streetwear, built with plain HTML, CSS and JavaScript. Products come from Firebase Firestore and accounts are handled by Firebase Authentication. Each carts is saved in Firestore , so it persists across sessions and devices.
 
-**Live site:** 
+**Live site:** https://urbanthreadsonlinestore.netlify.app
 
 ## Features
 ### Core Requirements
