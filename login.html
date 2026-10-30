@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Threads | Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="icon" href="./assets/bag-shopping-svgrepo-com.svg" />
+  </head>
+  <body class="auth-body">
+    <header class="auth-header page-shell">
+      <nav class="navbar auth-navbar" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <a href="./index.html" class="brand-mark" aria-label="Urban Threads home">
+            <span class="material-symbols-outlined">local_mall</span>
+            <span>Urban Threads</span>
+          </a>
+        </div>
+
+        <div class="nav-actions auth-nav-actions">
+          <a id="cart-link" href="./cart.html" aria-label="Open cart" hidden>Cart</a>
+          <a id="login-link" href="./login.html" aria-label="Login to your account">Log in</a>
+          <span id="user-label" hidden></span>
+          <button id="logout-btn" type="button" hidden>Log out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="auth-page page-shell">
+      <section class="auth-card">
+        <div class="auth-panel auth-panel-form">
+          <div class="auth-heading">
+            <p id="form-mode-label" class="eyebrow">Sign in</p>
+            <h2 id="form-title">Log in to your account</h2>
+          </div>
+
+          <form id="auth-form" novalidate>
+            <label id="name-field" class="field" hidden>
+              <span>Name</span>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label class="field">
+              <span>Password</span>
+              <input type="password" id="password" name="password" placeholder="••••••••" required minlength="6" />
+            </label>
+
+            <div class="form-row">
+              <label class="remember-me">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" id="submit-btn" class="primary-btn auth-submit">
+              Log in
+            </button>
+
+            <p id="message" class="form-message" role="alert" aria-live="polite"></p>
+
+            <p class="switch-copy">
+              <span id="switch-copy-text">Don’t have an account?</span>
+              <a href="#" id="toggle-auth-mode">Create one</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./pages/login.js"></script>
+  </body>
 </html>

@@ -3,18 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Threads | Cloth Online Shopping Store</title>
+    <link rel="icon" href="./assets/bag-shopping-svgrepo-com.svg" />
+    <title>Urban Threads | Online Shopping Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/layout.css" />
   </head>
+
   <body>
-    <nav>
-      <h3>Urban Threads</h3>
-    </nav>
-    <header>
-      <h1>Online store</h1>
+    <header class="header">
+      <nav class="navbar page-shell" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <span class="material-symbols-outlined">menu</span>
+          <a href="./index.html" class="logo">Urban Threads</a>
+        </div>
+
+        <div class="searchbar" role="search">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input
+            type="search"
+            placeholder="Search products"
+            aria-label="Search products"
+          />
+        </div>
+
+        <div class="nav-actions">
+          <span class="material-symbols-outlined">favorite</span>
+          <a id="cart-link" href="./cart.html" aria-label="Open cart" hidden
+            >Cart</a
+          >
+          <a
+            id="login-link"
+            href="./login.html"
+            aria-label="Login to your account"
+            >Log in</a
+          >
+          <span id="user-label" hidden></span>
+          <button id="logout-btn" type="button" hidden>Log out</button>
+        </div>
+      </nav>
     </header>
 
-    <script type="module" src="js/firebaseConfig.js">
-          
-    </script>
+    <main class="page-shell">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">New season arrivals</p>
+          <h1>Streetwear essentials for everyday confidence.</h1>
+          <a href="./shop.html" class="primary-btn">Shop now</a>
+        </div>
+      </section>
+
+      <section class="category-section">
+        <div class="category-grid">
+          <a class="category-card" href="./shop.html?category=Hoodies"
+            >Hoodies</a
+          >
+          <a class="category-card" href="./shop.html?category=T-shirts"
+            >T-shirts</a
+          >
+          <a class="category-card" href="./shop.html?category=Sneakers"
+            >Sneakers</a
+          >
+          <a class="category-card" href="./shop.html?category=Accessories"
+            >Accessories</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">Urban Threads</a>
+          <p>Causal streetwear for everyday life</p>
+        </div>
+
+        <nav aria-label="Shop">
+          <h2>Shop</h2>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">T-shirts</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Account">
+          <h2>Account</h2>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">
+        <span>&copy; 2026 Urban Threads Online Store Project | All rights reserved.</span>
+        <span>Creator: Thapelo Legote</span>
+      </p>
+    </footer>
+
+    <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./pages/index.js"></script>
   </body>
 </html>

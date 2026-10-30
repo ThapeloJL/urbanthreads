@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Threads | Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="icon" href="./assets/bag-shopping-svgrepo-com.svg" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar page-shell" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <span class="material-symbols-outlined">menu</span>
+          <a href="./index.html" class="logo">Urban Threads</a>
+        </div>
+
+        <div class="searchbar" role="search">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input type="search" placeholder="Search products" aria-label="Search products" />
+        </div>
+
+        <div class="nav-actions">
+          <span class="material-symbols-outlined">favorite</span>
+          <a id="cart-link" href="./cart.html" aria-label="Open cart" hidden>Cart</a>
+          <a id="login-link" href="./login.html" aria-label="Login to your account">Log in</a>
+          <span id="user-label" hidden></span>
+          <button id="logout-btn" type="button" hidden>Log out</button>
+        </div>
+      </nav>
+    </header>
+
+  <main class="page-shell">
+      <section class="shop-page">
+        <div class="shop-toolbar">
+          <button data-category="All" class="active">All</button>
+          <button data-category="Hoodies">Hoodies</button>
+          <button data-category="T-shirts">T-shirts</button>
+          <button data-category="Sneakers">Sneakers</button>
+          <button data-category="Accessories">Accessories</button>
+        </div>
+
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+  </main>
+
+
+  <script type="module" src="./js/navbar.js"></script>
+  <script type="module" src="./pages/shop.js"></script>
+  </body>
 </html>
