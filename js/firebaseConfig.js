@@ -4,8 +4,8 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.8.0/firebase
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDHWzLRwH53Z2zMFWr2ems2IMlTAPWfYz8",
-  authDomain:"urbanthreadsstore-f0f54.firebaseapp.com",
+  apiKey: "AIzaSyBGZR_EA-9q_zTNinOeCSU7Pq5hbWwK_Ek",
+  authDomain: "urbanthreadsstore-f0f54.firebaseapp.com",
   projectId: "urbanthreadsstore-f0f54",
   storageBucket: "urbanthreadsstore-f0f54.firebasestorage.app",
   messagingSenderId: "1035929110327",
